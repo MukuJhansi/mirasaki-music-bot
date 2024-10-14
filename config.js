@@ -30,16 +30,16 @@ const config = {
   // Amount of seconds to stay in the voice channel
   // when playback is finished
   // Default: 2 minutes
-  defaultLeaveOnEndCooldown: 120,
+  defaultLeaveOnEndCooldown: -1,
 
   // Should the bot leave the voice-channel if there's no other members
-  defaultLeaveOnEmpty: true,
+  defaultLeaveOnEmpty: false,
 
   // Time amount of seconds to stay in the voice channel
   // when channel is empty/no other members aside from bot
   // Only active when leaveOnEmpty is true
   // Default: 2 minutes
-  defaultLeaveOnEmptyCooldown: 120,
+  defaultLeaveOnEmptyCooldown: -1,
 
   // When true, will create a thread when the voice session is first initialized
   // and continue to send music/queue events in that thread instead of flooding
@@ -62,12 +62,12 @@ const config = {
   // Bot activity
   presence: {
     // One of online, idle, invisible, dnd
-    status: 'online',
+    status: 'dnd',
     activities: [
       {
-        name: '/play',
+        name: 'With Randi Bala',
         // One of Playing, Streaming, Listening, Watching
-        type: 'Listening'
+        type: 'Playing'
       }
     ]
   },
@@ -75,14 +75,14 @@ const config = {
   // Permission config
   permissions: {
     // Bot Owner, highest permission level (5)
-    ownerId: '290182686365188096',
+    ownerId: '1115658967012626542',
 
     // Bot developers, second to highest permission level (4)
     developers: [ '' ]
   },
 
   // The Discord server invite to your Support server
-  supportServerInviteLink: 'https://discord.gg/mirasaki',
+  supportServerInviteLink: 'https://discord.gg/7Y9hr7hvr4',
 
   // Additional permissions that are considered required when generating
   // the bot invite link with /invite
